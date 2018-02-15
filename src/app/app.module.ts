@@ -22,6 +22,7 @@ import { DatabindingComponent } from './components/demos/databinding/databinding
     BrowserModule,
     AppRoutingModule,
     FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
