@@ -9,6 +9,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { IteratorsComponent } from './components/typescript/iterators/iterators.component';
+import { GoatRoutingModule } from './/goat-routing.module';
+import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
+import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
 
 // NgModule Decorator
 @NgModule({
@@ -19,11 +22,14 @@ import { IteratorsComponent } from './components/typescript/iterators/iterators.
     NavbarComponent,
     DatabindingComponent,
     IteratorsComponent,
+    DatabindingdefinitionComponent,
+    DatatypesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    GoatRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
