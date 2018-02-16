@@ -9,7 +9,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { InterpolationComponent } from './components/definitions/interpolation/interpolation.component';
-import { FormsModule } from '@angular/forms';
 import { DefinitionsComponent } from './components/definitions/definitions.component';
 import { DecoratorComponent } from './components/definitions/decorator/decorator.component';
 import { RattlesnakeRoutingModule } from './rattlesnake-routing.module';
@@ -45,6 +44,7 @@ import { ModulesComponent } from './components/definitions/modules/modules.compo
     DatatypesComponent,
     EnumerationsComponent,
     ModulesComponent
+  ],
   imports: [
   BrowserModule,
     AppRoutingModule,
