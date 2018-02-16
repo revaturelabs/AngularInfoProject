@@ -4,6 +4,7 @@ import { AdvancedTypesComponent } from '../../components/typescript/advanced-typ
 import { ServicesComponent } from '../../components/typescript/services/services.component';
 import { EvilSchemeRoutingModule } from './evil-scheme-routing.module';
 import { PromisesComponent } from '../../components/typescript/promises/promises.component';
+import { ObservablesComponent } from '../../components/definitions/observables/observables.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,9 @@ import { PromisesComponent } from '../../components/typescript/promises/promises
   ],
   declarations: [
   	AdvancedTypesComponent,
-    ServicesComponent
+    ServicesComponent,
+    PromisesComponent,
+    ObservablesComponent
   ]
 })
 export class EvilSchemeModule { }
