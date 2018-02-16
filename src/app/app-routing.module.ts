@@ -8,7 +8,6 @@ import { IntroductionComponent } from './components/typescript/introduction/intr
 import { AccessComponent } from './components/typescript/access/access.component';
 import { IteratorsComponent } from './components/typescript/iterators/iterators.component';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
-import { AdvancedTypesComponent } from './components/typescript/advanced-types/advanced-types.component';
 import { NpmComponent } from './components/bundling/npm/npm.component';
 import { AngularcliComponent } from './components/bundling/angularcli/angularcli.component';
 import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
@@ -19,14 +18,19 @@ export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
     { path: 'iterators', component: IteratorsComponent },
     { path: 'access', component: AccessComponent },
+    { path: 'databinding', component: DatabindingComponent},
     { path: 'typescript-def', component: TypescriptComponent },
     { path: 'npm', component: NpmComponent },
     { path: 'angularcli', component: AngularcliComponent },
     // { path: 'packjs', component: PackjsComponent }
     { path: 'enumerations', component: EnumerationsComponent},
+<<<<<<< HEAD
+    { path: 'datatypes', component: DatatypesComponent }
+=======
     { path: 'datatypes', component: DatatypesComponent },
     { path: 'databinding', component: DatabindingComponent},
     { path: 'modules', component: ModulesComponent}
+>>>>>>> 5c5ec2284af02d45ec1b522d446bf7fcb8b2741d
 ];
 
 // Decorator for a module
