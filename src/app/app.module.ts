@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { NpmComponent } from './components/bundling/npm/npm.component';
 import { BundlingComponent } from './components/bundling/bundling.component';
+import { AngularcliComponent } from './components/bundling/angularcli/angularcli.component';
 
 // NgModule Decorator
 @NgModule({
@@ -20,7 +21,8 @@ import { BundlingComponent } from './components/bundling/bundling.component';
     NavbarComponent,
     DatabindingComponent,
     NpmComponent,
-    BundlingComponent
+    BundlingComponent,
+    AngularcliComponent
   ],
   imports: [
     BrowserModule,
