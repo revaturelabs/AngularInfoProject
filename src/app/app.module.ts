@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { DecoratorComponent } from './components/definitions/decorator/decorator.component';
 import { RattlesnakeRoutingModule } from './rattlesnake-routing.module';
+import { ComponentComponent } from './components/definitions/component/component.component';
 
 // NgModule Decorator
 @NgModule({
@@ -19,10 +20,11 @@ import { RattlesnakeRoutingModule } from './rattlesnake-routing.module';
     AccessComponent,
     NavbarComponent,
     DatabindingComponent,
-    DecoratorComponent
+    DecoratorComponent,
+    ComponentComponent
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     FormsModule,
     RattlesnakeRoutingModule
