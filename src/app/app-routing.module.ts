@@ -6,9 +6,9 @@ import { AccessComponent } from './components/typescript/access/access.component
 
 //  Specify routs of the Application
 export const routes: Routes = [
-    {path: 'intro', component: IntroductionComponent},
-    {path: 'access', component: AccessComponent},
-    {path: 'databinding', component: DatabindingComponent}
+    { path: 'intro', component: IntroductionComponent },
+    { path: 'access', component: AccessComponent },
+    { path: 'databinding', component: DatabindingComponent}
 ];
 
 // Decorator for a module
