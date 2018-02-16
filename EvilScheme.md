@@ -2,7 +2,8 @@
 
 ### Topics covered:
 
-#### Bundles (Webpack and angular cli):
+#### Advanced Types:
+##### Adding information on TypeScript's advanced types.
 
 #### Promises (Definition and introduction):
 
