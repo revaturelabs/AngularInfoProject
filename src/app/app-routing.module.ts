@@ -4,15 +4,17 @@ import { IntroductionComponent } from './components/typescript/introduction/intr
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccessComponent } from './components/typescript/access/access.component';
-
+import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
+import { ModulesComponent } from './components/definitions/modules/modules.component';
 
 // Specify Routes of the Application
 export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
     { path: 'access', component: AccessComponent },
+    { path: 'enumerations', component: EnumerationsComponent},
     { path: 'datatypes', component: DatatypesComponent },
-    { path: 'databinding', component: DatabindingComponent}
-
+    { path: 'databinding', component: DatabindingComponent},
+    { path: 'modules', component: ModulesComponent}
 ];
 
 // Decorator for a module
