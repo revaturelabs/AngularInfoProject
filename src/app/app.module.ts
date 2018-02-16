@@ -9,6 +9,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { TypescriptComponent } from './components/definitions/typescript/typescript.component';
+import { NpmComponent } from './components/bundling/npm/npm.component';
+import { BundlingComponent } from './components/bundling/bundling.component';
+import { AngularcliComponent } from './components/bundling/angularcli/angularcli.component';
+import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
+import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
 
 // NgModule Decorator
 @NgModule({
@@ -18,7 +23,12 @@ import { TypescriptComponent } from './components/definitions/typescript/typescr
     AccessComponent,
     NavbarComponent,
     DatabindingComponent,
-    TypescriptComponent
+    TypescriptComponent,
+    NpmComponent,
+    BundlingComponent,
+    AngularcliComponent,
+    DatatypesComponent,
+    EnumerationsComponent
   ],
   imports: [
     BrowserModule,
