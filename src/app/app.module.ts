@@ -16,7 +16,7 @@ import { DatabindingComponent } from './components/demos/databinding/databinding
     IntroductionComponent,
     AccessComponent,
     NavbarComponent,
-    DatabindingComponent
+    DatabindingComponent,
   ],
   imports: [
     BrowserModule,
