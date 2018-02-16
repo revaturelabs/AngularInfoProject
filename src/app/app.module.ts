@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { GoatRoutingModule } from './/goat-routing.module';
+import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
 
 // NgModule Decorator
 @NgModule({
@@ -17,7 +18,8 @@ import { GoatRoutingModule } from './/goat-routing.module';
     IntroductionComponent,
     AccessComponent,
     NavbarComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    DatabindingdefinitionComponent
   ],
   imports: [
     BrowserModule,
