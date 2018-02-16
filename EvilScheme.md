@@ -4,7 +4,7 @@
 
 #### Advanced Types:
 ##### Adding information on TypeScript's advanced types.
-##### Implemented angular component for Advanced Types information.
+##### Implemented angular component for Advanced Types information.ng
 
 #### Promises (Definition and introduction):
 A Promise is an object representing the eventual completion or failure of an asynchronous operation. 
