@@ -8,8 +8,8 @@ import { AccessComponent } from './components/typescript/access/access.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
-import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
 import { GoatRoutingModule } from './/goat-routing.module';
+import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
 
 // NgModule Decorator
 @NgModule({
