@@ -8,6 +8,7 @@ import { AccessComponent } from './components/typescript/access/access.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
+import { GoatRoutingModule } from './/goat-routing.module';
 
 // NgModule Decorator
 @NgModule({
@@ -21,7 +22,8 @@ import { DatabindingComponent } from './components/demos/databinding/databinding
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    GoatRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
