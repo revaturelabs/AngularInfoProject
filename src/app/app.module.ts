@@ -11,6 +11,10 @@ import { DatabindingComponent } from './components/demos/databinding/databinding
 import { FormsModule } from '@angular/forms';
 import { DefinitionsComponent } from './components/definitions/definitions.component';
 
+import { DecoratorComponent } from './components/definitions/decorator/decorator.component';
+import { RattlesnakeRoutingModule } from './rattlesnake-routing.module';
+import { ComponentComponent } from './components/definitions/component/component.component';
+
 
 @NgModule({
   declarations: [
@@ -19,12 +23,15 @@ import { DefinitionsComponent } from './components/definitions/definitions.compo
     AccessComponent,
     NavbarComponent,
     DatabindingComponent,
-    DefinitionsComponent
+    DefinitionsComponent,
+    DecoratorComponent,
+    ComponentComponent
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RattlesnakeRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
