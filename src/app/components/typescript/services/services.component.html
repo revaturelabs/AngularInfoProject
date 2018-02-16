@@ -1,0 +1,77 @@
+<p>#Services</p>
+<p>###What is a Service?</p>
+<p>A service is a type of Javascript/Typescript function, responsible for a single task. A service can have multiple properties and methods, which are included within the service's component.
+The main purpose of a service, however, is to be used in a <em>Dependency Injection</em>, with one injecting the Service into a seperate service or general function.
+A <em>Dependency Injection</em> is a way to create objects that will depend on other objects. For example, Service A will perform a task that will retrieve/create information for service B, which will in turn run a function that will prepare information for Object C.</p>
+<p>To create a Service, one must first import the <em>Injectable</em> member, and add the @Injectable decorator. Once that's been done, you create an 'export', which will be the function that you call within your service.</p>
+<h3 id="example">Example</h3>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> &123: Injectable &125: from <span class="hljs-string">'@angular/core'</span>;  
+  
+@Injectable()  
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> MyService &123:  
+  GetText() &123:  
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Text From Service"</span>;  
+  &125: 
+&125:  
+</div></code></pre>
+<p>The above example, when called, would return the text &quot;Text From Service&quot;.</p>
+<p>As for using a service, one would need to follow four steps:</p>
+<ul>
+<li>Import the Service your component
+*<pre class="hljs"><code><div><span class="hljs-keyword">import</span> &123: MyService &125: from <span class="hljs-string">'./app.service'</span>;
+</div></code></pre>
+</li>
+<li>Add it as a provider:
+*<pre class="hljs"><code><div>@Component(&123:
+        selecter: <span class="hljs-string">'testing-app'</span>,
+        templateURL: <span class="hljs-string">'./app/trevin.html'</span>,
+        providers; [MyService]
+      &125:)
+</div></code></pre>
+</li>
+<li>Include it through a Dependency Injection:
+*<pre class="hljs"><code><div><span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> AppComponent&123:
+        name = <span class="hljs-string">"Saleh"</span>;
+        message = <span class="hljs-string">'Our team da bes'</span>;
+        <span class="hljs-keyword">constructor</span>(private _myService: MyService) &123:
+
+        &125:
+</div></code></pre>
+</li>
+<li>Use the Service function:
+*<pre class="hljs"><code><div>onClickMe() &123:
+          <span class="hljs-keyword">this</span>.messageText = <span class="hljs-keyword">this</span>._myService.GetText();
+        &125:
+      &125:
+</div></code></pre>
+</li>
+</ul>
+<p>You also need to add the Service as a provider, instead of a component. The service will be imported as:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> &123: MyService &125: from <span class="hljs-string">'./app.service'</span>;
+</div></code></pre>
+<h3 id="put-some-services-in-your-services">Put some Services in your Services</h3>
+<p>To inject a service into another service, one must construct an instance of the service to be called:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> &123: Injectable &125: from <span class="hljs-string">'@angular/core'</span>;
+
+        @Injectable()
+        <span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> OtherService &123:
+          GetSomeText()&123:
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello from the other side"</span>;
+          &125:
+        &125:
+</div></code></pre>
+<p>And then import and use the first service within another:</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> &123: Injectable &125: from <span class="hljs-string">'@angular/core'</span>;
+        <span class="hljs-keyword">import</span> &123: OtherService &125: from <span class="hljs-string">'./OtherService'</span>;
+
+        @Injectable()
+        <span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> MyService &123:
+          <span class="hljs-keyword">constructor</span>(private hello:OtherService) &123:
+
+          &125:
+
+          GetTextFromOtherService() &123:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.hello.GetSomeText();
+          &125:
+        &125:
+</div></code></pre>
