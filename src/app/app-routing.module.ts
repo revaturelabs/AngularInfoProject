@@ -8,8 +8,7 @@ import { AccessComponent } from './components/typescript/access/access.component
 // Specify Routes of the Application
 export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
-    { path: 'access', component: AccessComponent },
-    { path: 'databinding', component: DatabindingComponent}
+    { path: 'access', component: AccessComponent }
 
 ];
 
