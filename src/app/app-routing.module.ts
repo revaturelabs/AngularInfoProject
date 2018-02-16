@@ -4,14 +4,20 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccessComponent } from './components/typescript/access/access.component';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
+import { NpmComponent } from './components/bundling/npm/npm.component';
+import { AngularcliComponent } from './components/bundling/angularcli/angularcli.component';
+import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
 
 // Specify Routes of the Application
 export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
     { path: 'access', component: AccessComponent },
-    { path: 'datatypes', component: DatatypesComponent },
-    { path: 'databinding', component: DatabindingComponent}
-
+    { path: 'databinding', component: DatabindingComponent},
+    { path: 'npm', component: NpmComponent },
+     { path: 'angularcli', component: AngularcliComponent },
+    // { path: 'packjs', component: PackjsComponent }
+    { path: 'enumerations', component: EnumerationsComponent},
+    { path: 'datatypes', component: DatatypesComponent }
 ];
 
 // Decorator for a module
