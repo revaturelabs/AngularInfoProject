@@ -1,0 +1,43 @@
+<div id="mainContainer">
+  <div id="enumContainer">
+    <h1>TypeScript Enumerations</h1>
+
+    <hr>
+    <br>
+
+    <p class="definition"><b>Definition:</b> It's a more readable way of using a set of values to represent states. </p>
+    <br>
+    <h2>TypeScript Enumeration Rules</h2>
+    <ul>
+      <li>Enum values increment from the first defined value.</li>
+      <li>Numeric enum values start at 0 by default.</li>
+      <li>You can use strings as enum values.</li>
+      <li>You <i>can</i> use string and number values together in the same enum.</li>
+      <li>Computed enum values are allowed, but must appear after unassigned enum values. Constant enums expressions follow these rules:</li>
+      
+      <ul>
+          <li>a literal enum expression (basically a string literal or a numeric literal) </li>
+          <li>a reference to previously defined constant enum member (which can originate from a different enum).</li>
+          <li>a parenthesized constant enum expression</li>
+          <li>one of the +, -, ~ unary operators applied to constant enum expression</li>
+          <li>+, -, *, /, %, <<, >>, >>>, &, |, ^ binary operators with constant enum expressions as operands It is a compile time error for constant enum expressions to be evaluated to NaN or Infinity.</li>
+      </ul>
+    </ul>
+    <p class="code-segment">
+      enum {{ "{ Up = 1, Down, Left, Right, }" }}
+    </p>
+<br>
+    <h2>Example of using an enum: </h2>
+    <p class="code-segment"> enum
+      <b>Response</b> {{ "{ No = 0, Yes = 1, }" }} </p>
+    <p class="code-segment"> function respond(recipient: string,
+      <b>message: Response</b>): void {{"{ // ... }"}}</p>
+    <p class="code-segment"> respond("Princess Caroline",
+      <b>Response.Yes</b>)</p>
+
+      <p class="definition">
+        Find more details in :     
+        <a href="http://www.typescriptlang.org/docs/handbook/enums.html">The TypeScript Handbook</a>
+      </p>
+  </div>
+</div>
