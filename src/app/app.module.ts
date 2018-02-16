@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { DecoratorComponent } from './components/definitions/decorator/decorator.component';
+import { RattlesnakeRoutingModule } from './rattlesnake-routing.module';
 
 // NgModule Decorator
 @NgModule({
@@ -23,7 +24,8 @@ import { DecoratorComponent } from './components/definitions/decorator/decorator
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RattlesnakeRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
