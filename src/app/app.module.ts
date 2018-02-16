@@ -8,15 +8,16 @@ import { AccessComponent } from './components/typescript/access/access.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
-
-// NgModule Decorator
+import { InterpolationComponent } from './components/definitions/interpolation/interpolation.component';
+                                  
 @NgModule({
   declarations: [
     AppComponent,
     IntroductionComponent,
     AccessComponent,
     NavbarComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    InterpolationComponent
   ],
   imports: [
     BrowserModule,
