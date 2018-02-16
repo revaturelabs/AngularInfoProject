@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
+import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
 
 // NgModule Decorator
 @NgModule({
@@ -18,7 +19,8 @@ import { DatatypesComponent } from './components/typescript/datatypes/datatypes.
     AccessComponent,
     NavbarComponent,
     DatabindingComponent,
-    DatatypesComponent
+    DatatypesComponent,
+    EnumerationsComponent
   ],
   imports: [
     BrowserModule,
