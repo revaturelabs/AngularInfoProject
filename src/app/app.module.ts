@@ -8,9 +8,13 @@ import { AccessComponent } from './components/typescript/access/access.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
+<<<<<<< HEAD
 import { DecoratorComponent } from './components/definitions/decorator/decorator.component';
 import { RattlesnakeRoutingModule } from './rattlesnake-routing.module';
 import { ComponentComponent } from './components/definitions/component/component.component';
+=======
+import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
+>>>>>>> a9e0e4843a4bfc40c43128de8baca1be1321e9bd
 
 // NgModule Decorator
 @NgModule({
@@ -20,8 +24,12 @@ import { ComponentComponent } from './components/definitions/component/component
     AccessComponent,
     NavbarComponent,
     DatabindingComponent,
+<<<<<<< HEAD
     DecoratorComponent,
     ComponentComponent
+=======
+    DatatypesComponent
+>>>>>>> a9e0e4843a4bfc40c43128de8baca1be1321e9bd
   ],
   imports: [
   BrowserModule,
