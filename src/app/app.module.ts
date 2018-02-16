@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { GoatRoutingModule } from './/goat-routing.module';
 import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
+import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
 
 // NgModule Decorator
 @NgModule({
@@ -19,7 +20,11 @@ import { DatabindingdefinitionComponent } from './components/definitions/databin
     AccessComponent,
     NavbarComponent,
     DatabindingComponent,
+<<<<<<< HEAD
     DatabindingdefinitionComponent
+=======
+    DatatypesComponent
+>>>>>>> a9e0e4843a4bfc40c43128de8baca1be1321e9bd
   ],
   imports: [
     BrowserModule,
