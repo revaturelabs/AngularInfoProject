@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class DatabindingComponent implements OnInit {
 
   title = 'Databinding';
-  databindingImage = 'https://www.ngdevelop.tech/wp-content/uploads/2017/12/Databinding-300x179.png';
+  dataBindingImage = 'https://www.ngdevelop.tech/wp-content/uploads/2017/12/Databinding-300x179.png';
   interpolation = '{{}}';
 
   // Property Binding
-  propertyBinding = '[ ]';
+  propertybinding = '[ ]';
   public objectStyles = {
     color: 'red',
     border: '1px solid black',
@@ -24,35 +24,32 @@ export class DatabindingComponent implements OnInit {
   count = 0;
   eventNotation = '( )';
 
+
   // twoWayDatabinding
   twoWayDatabinding = '[()]';
 
-  // Two-Way Databinding
-  public user = {
+   // Two-Way Databinding
+   public user = {
     email: '',
     password: ''
   };
-
-
   public changeStyles(): void {
     if (this.objectStyles.color === 'red') {
       this.objectStyles.color = 'blue';
       this.objectStyles.border = '4px groove purple';
-    } else if ( this.objectStyles.color === 'blue') {
+    } else if (this.objectStyles.color === 'blue') {
       this.objectStyles.color = 'green';
       this.objectStyles.border = '4px ridge yellow';
     } else {
       this.objectStyles.color = 'red';
       this.objectStyles.border = '4px solid black';
     }
-
   }
 
-  // Click event for 1-way databinding of EventBinding
+  // Click event for one way databinding
   public incrementCount(): void {
     this.count++;
   }
-
 
   constructor() { }
 
