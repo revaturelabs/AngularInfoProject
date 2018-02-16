@@ -3,6 +3,7 @@ import { IntroductionComponent } from './components/typescript/introduction/intr
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccessComponent } from './components/typescript/access/access.component';
+import { IteratorsComponent } from './components/typescript/iterators/iterators.component';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
 import { ModulesComponent } from './components/definitions/modules/modules.component';
@@ -10,6 +11,7 @@ import { ModulesComponent } from './components/definitions/modules/modules.compo
 // Specify Routes of the Application
 export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
+    { path: 'iterators', component: IteratorsComponent },
     { path: 'access', component: AccessComponent },
     { path: 'enumerations', component: EnumerationsComponent},
     { path: 'datatypes', component: DatatypesComponent },
