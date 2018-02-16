@@ -9,9 +9,7 @@ import { AdvancedTypesComponent } from './components/typescript/advanced-types/a
 export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
     { path: 'access', component: AccessComponent },
-    { path: 'databinding', component: DatabindingComponent},
-    { path: 'advanced-types', component: AdvancedTypesComponent}
-
+    { path: 'databinding', component: DatabindingComponent}
 ];
 
 // Decorator for a module
