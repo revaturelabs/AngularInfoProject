@@ -11,6 +11,8 @@ import { DatabindingComponent } from './components/demos/databinding/databinding
 import { NpmComponent } from './components/bundling/npm/npm.component';
 import { BundlingComponent } from './components/bundling/bundling.component';
 import { AngularcliComponent } from './components/bundling/angularcli/angularcli.component';
+import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
+import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
 
 // NgModule Decorator
 @NgModule({
@@ -22,7 +24,9 @@ import { AngularcliComponent } from './components/bundling/angularcli/angularcli
     DatabindingComponent,
     NpmComponent,
     BundlingComponent,
-    AngularcliComponent
+    AngularcliComponent,
+    DatatypesComponent,
+    EnumerationsComponent
   ],
   imports: [
     BrowserModule,
