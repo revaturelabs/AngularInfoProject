@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularcliComponent } from './angularcli.component';
+import { NpmComponent } from './npm.component';
 
-describe('AngularcliComponent', () => {
-  let component: AngularcliComponent;
-  let fixture: ComponentFixture<AngularcliComponent>;
+describe('NpmComponent', () => {
+  let component: NpmComponent;
+  let fixture: ComponentFixture<NpmComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AngularcliComponent ]
+      declarations: [ NpmComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularcliComponent);
+    fixture = TestBed.createComponent(NpmComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
