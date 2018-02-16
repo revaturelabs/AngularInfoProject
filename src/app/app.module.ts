@@ -12,6 +12,7 @@ import { GoatRoutingModule } from './/goat-routing.module';
 import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
 import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
 import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
+import { ModulesComponent } from './components/definitions/modules/modules.component';
 
 // NgModule Decorator
 @NgModule({
@@ -23,7 +24,8 @@ import { EnumerationsComponent } from './components/typescript/enumerations/enum
     DatabindingComponent,
     DatabindingdefinitionComponent,
     DatatypesComponent,
-    EnumerationsComponent
+    EnumerationsComponent,
+    ModulesComponent
   ],
   imports: [
     BrowserModule,
