@@ -16,8 +16,12 @@ import { TypescriptComponent } from './components/definitions/typescript/typescr
 import { NpmComponent } from './components/bundling/npm/npm.component';
 import { BundlingComponent } from './components/bundling/bundling.component';
 import { AngularcliComponent } from './components/bundling/angularcli/angularcli.component';
+import { IteratorsComponent } from './components/typescript/iterators/iterators.component';
+import { GoatRoutingModule } from './/goat-routing.module';
+import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
 import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
 import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
+import { ModulesComponent } from './components/definitions/modules/modules.component';
 
 @NgModule({
   declarations: [
@@ -34,14 +38,18 @@ import { EnumerationsComponent } from './components/typescript/enumerations/enum
     NpmComponent,
     BundlingComponent,
     AngularcliComponent,
+    IteratorsComponent,
+    DatabindingdefinitionComponent,
     DatatypesComponent,
-    EnumerationsComponent
+    EnumerationsComponent,
+    ModulesComponent
   ],
   imports: [
   BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RattlesnakeRoutingModule
+    RattlesnakeRoutingModule,
+    GoatRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
