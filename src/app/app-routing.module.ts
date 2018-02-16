@@ -1,3 +1,4 @@
+import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
 import { IntroductionComponent } from './components/typescript/introduction/introduction.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,8 +10,9 @@ import { EnumerationsComponent } from './components/typescript/enumerations/enum
 export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
     { path: 'access', component: AccessComponent },
-    { path: 'databinding', component: DatabindingComponent},
-    { path: 'enumerations', component: EnumerationsComponent}
+    { path: 'enumerations', component: EnumerationsComponent},
+    { path: 'datatypes', component: DatatypesComponent },
+    { path: 'databinding', component: DatabindingComponent}
 ];
 
 // Decorator for a module
