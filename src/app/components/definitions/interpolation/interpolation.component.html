@@ -11,16 +11,13 @@
       </div>
       <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
         <div class="panel-body">
-            Types enable JavaScript developers to use highly-productive development tools and practices like static checking and code refactoring when developing JavaScript applications.
-            <br>
-            Developed By Microsoft<br>
-            Programming language which <strong>transpiles</strong> into JavaScript. <br>
-            <strong>Types</strong> can now be defined for <strong>variables</strong> and/or <strong>return types</strong>. <br>
-            <strong>Classes</strong> and <strong>Interfaces</strong> can be defined. <br>
-            <strong>Access modifiers</strong> can be provided. <br>
-            Supports JavaScript <strong>ES6</strong> notations (let, =>). <br>
-            <a target="_blank" href="http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html">Intro Link</a>
-
+          Data binding in AngularJS is the synchronization between the model and the view or the top level app.component.ts and 
+          app.component.html. The <strong>SyncWings</strong> represents interpolation syntax for the view or the app.component.html. The identifier <strong>username</strong> 
+          represents the model property. In the app.component.ts --> within the export component class has the <strong>username</strong>
+          declaration and initialization. For example username = "JohnnyFive" is in the app.component.ts exported class. Placing
+          username within the <strong>Sync Wings</strong> easily displays JohnnyFive within the view. With this synchronization between the model
+          and view, one holds a powerful and simple communicative tool between the view and model. 
+            <!-- <a target="_blank" href="http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html">Intro Link</a> -->
         </div>
       </div>
     </div>
@@ -28,12 +25,17 @@
       <div class="panel-heading" role="tab" id="headingTwo">
         <h4 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Project Configuration
+            How Text and Attribute Bindings Work
           </a>
         </h4>
       </div>
       <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
         <div class="panel-body">
+            During the compilation process the compiler uses the $interpolate service to see if text nodes and element attributes 
+            contain interpolation markup with embedded expressions. If that is the case, the compiler adds an interpolateDirective 
+            to the node and registers watches on the computed interpolation function, which will update the corresponding text nodes 
+            or attribute values as part of the normal digest cycle.
+            Note that the interpolateDirective has a priority of 100 and sets up the watch in the preLink function.
           <a target="_blank" href="http://www.typescriptlang.org/docs/handbook/basic-types.html#toc-project-config">Documentation for Project Configuration</a>
         </div>
       </div>
@@ -42,14 +44,44 @@
       <div class="panel-heading" role="tab" id="headingThree">
         <h4 class="panel-title">
           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            TypeScript Docs
+            How the string representation is computed
           </a>
         </h4>
       </div>
       <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
         <div class="panel-body">
+            If the interpolated value is not a String, it is computed as follows: undefined and null are converted to ''
+            if the value is an object that is not a Number, Date or Array, $interpolate looks for a custom toString() function 
+            on the object, and uses that. Custom means that myObject.toString !== Object.prototype.toString.
+            if the above doesn't apply, JSON.stringify is used.
+            
             <a target="_blank" href="https://www.typescriptlang.org/docs/home.html">TypeScript Docs</a>
         </div>
       </div>
     </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Binding to boolean attributes
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+              Attributes such as <strong>disabled</strong> are called <strong>boolean</strong> attributes, because their presence means true and their 
+              absence means false. We cannot use normal attribute bindings with them, because the HTML specification does 
+              not require browsers to preserve the values of boolean attributes. This means that if we put an AngularJS interpolation 
+              expression into such an attribute then the binding information would be lost, because the browser ignores the attribute value.
+              In the following example, the interpolation information would be ignored and the browser would simply interpret the attribute as present, 
+              meaning that the button would always be disabled.
+              For this reason, AngularJS provides special ng-prefixed directives for the following boolean attributes: disabled, required, selected, 
+              checked, readOnly , and open.
+
+              These directives take an expression inside the attribute, and set the corresponding boolean attribute to true when the expression evaluates to truthy.
+              <a target="_blank" href="https://www.typescriptlang.org/docs/home.html">TypeScript Docs</a>
+          </div>
+        </div>
+      </div>
+
   </div>
