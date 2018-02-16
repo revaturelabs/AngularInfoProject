@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { DatabindingComponent } from './components/demos/databinding/databinding.component';
+import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
 
 // Specify Routes of the Application
 export const routes: Routes = [
-
+  { path: 'definitions/databinding', component: DatabindingdefinitionComponent }
 ];
 
 
+// Decorator for a module
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: []
+  imports: [RouterModule.forRoot(routes)],
+  exports: [ RouterModule ]
 })
+
+
 export class GoatRoutingModule { }
