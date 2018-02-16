@@ -1,3 +1,4 @@
+import { TypescriptComponent } from './components/definitions/typescript/typescript.component';
 import { IntroductionComponent } from './components/typescript/introduction/introduction.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -8,7 +9,8 @@ import { DatabindingComponent } from './components/demos/databinding/databinding
 export const routes: Routes = [
     { path: 'intro', component: IntroductionComponent },
     { path: 'access', component: AccessComponent },
-    { path: 'databinding', component: DatabindingComponent}
+    { path: 'databinding', component: DatabindingComponent},
+    { path: 'typescript-def', component: TypescriptComponent }
 
 ];
 
