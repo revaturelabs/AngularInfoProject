@@ -1,0 +1,9 @@
+<div class="container">
+	<h1 id="intersection-types">Observables: </h1>
+	<p class="text-justify">You can think of an observable as an array whose items arrive asynchronously over time. Observables help you manage asynchronous data, such as data coming from a backend service. Observables are used within Angular itself, including Angular’s event system and its http client service. To use observables, Angular uses a third-party library called Reactive Extensions (RxJS). Observables are a proposed feature for ES 2016, the next version of JavaScript.</p>
+
+	<p class="text-justify">Each line of a JavaScript program processes synchronously within a Call Stack. If you need a visual, think of the Call Stack as the soup pot in which elements are progressively added to build up a browser-based program.
+		If any of the elements within the Call Stack are written as asynchronous callback functions – that is, they aren’t intended to be processed until later – that function is then placed in an Event Table, where it is queued for processing (e.g. put back into the Call Stack) later. The Event Table is like a cutting board where JavaScript functions are readied for future processing.
+	The process that checks whether an event is ready to be moved out of the Event Table and into the Call Stack for processing is called the Event Loop. The Event Loop is like a chef, ushering functions from Table to Stack (from cutting board to soup pot). Leveraging this model of “parking” asynchronous functions in the Event Table stops code from blocking the browser by continuing its process of processing the data and displaying it, as the Event Loop handles automatically pushing processable functions back to the Call Stack.</p>
+	
+</div>

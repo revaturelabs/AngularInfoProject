@@ -8,7 +8,7 @@ import { AccessComponent } from './components/typescript/access/access.component
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
-import { AdvancedTypesComponent } from './components/typescript/advanced-types/advanced-types.component';
+import { ObservablesComponent } from './components/definitions/observables/observables.component';
 
 // NgModule Decorator
 @NgModule({
@@ -18,7 +18,7 @@ import { AdvancedTypesComponent } from './components/typescript/advanced-types/a
     AccessComponent,
     NavbarComponent,
     DatabindingComponent,
-    AdvancedTypesComponent
+    ObservablesComponent
   ],
   imports: [
     BrowserModule,
