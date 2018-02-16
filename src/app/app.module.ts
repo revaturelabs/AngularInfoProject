@@ -12,7 +12,12 @@ import { DefinitionsComponent } from './components/definitions/definitions.compo
 import { DecoratorComponent } from './components/definitions/decorator/decorator.component';
 import { RattlesnakeRoutingModule } from './rattlesnake-routing.module';
 import { ComponentComponent } from './components/definitions/component/component.component';
-
+import { TypescriptComponent } from './components/definitions/typescript/typescript.component';
+import { NpmComponent } from './components/bundling/npm/npm.component';
+import { BundlingComponent } from './components/bundling/bundling.component';
+import { AngularcliComponent } from './components/bundling/angularcli/angularcli.component';
+import { DatatypesComponent } from './components/typescript/datatypes/datatypes.component';
+import { EnumerationsComponent } from './components/typescript/enumerations/enumerations.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,13 @@ import { ComponentComponent } from './components/definitions/component/component
     InterpolationComponent,
     DefinitionsComponent,
     DecoratorComponent,
-    ComponentComponent
+    ComponentComponent,
+    TypescriptComponent,
+    NpmComponent,
+    BundlingComponent,
+    AngularcliComponent,
+    DatatypesComponent,
+    EnumerationsComponent
   ],
   imports: [
   BrowserModule,
