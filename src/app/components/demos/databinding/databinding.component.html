@@ -1,0 +1,74 @@
+<div class="page-header">
+    <h1>{{title}}</h1>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Interpolation {{interpolation}}</h3>
+    </div>
+    <div class="panel-body">
+        <img src="{{databindingImage}}" />
+        <ul class="list-group">
+            <li class="list-group-item">For one way databinding</li>
+            <li class="list-group-item">Interpoloation is:<strong> Component</strong> to the <strong>DOM/Template</strong></li>
+            <li class="list-group-item">An evaluation (5+21):<strong> {{5 + 21}} </strong></li>
+          </ul>
+    </div>
+  </div>
+
+
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">PropertyBinding {{propertyBinding}}</h3>
+      </div>
+      <div class="panel-body">
+          <ul class="list-group">
+              <li class="list-group-item">Change the attribute of a node based on the changes of a property.</li>
+              <li class="list-group-item"> We can also change and bind to the properties of another component.</li>
+              <li class="list-group-item">It is also a one-way databinding form.</li>
+              <li class="list-group-item">
+                  <div [ngStyle]="objectStyles" (click)="changeStyles()">
+                    Click me to Toggle styles
+                  </div>
+              </li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">EventBinding {{eventNotation}}</h3>
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                <li class="list-group-item"> For event handling: {{eventNotation}}</li>
+                <li class="list-group-item">Count: {{count}} </li>
+                <li class="list-group-item"><button class="btn btn-default" (click)="incrementCount()">click to increment</button> </li>
+              </ul>
+        </div>
+      </div>
+
+
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Two-Way Databinding {{twoWayDatabinding}}</h3>
+          </div>
+          <div class="panel-body">
+              <ul class="list-group">
+                  <li class="list-group-item"> To alter from user input or from the component. </li>
+                  <li class="list-group-item"> 
+                      <div class="form-group">
+                        <input [(ngModel)]="user.email" placeholder="Email" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                          <input [(ngModel)]="user.password" type="password" placeholder="Password" class="form-control" />
+                      </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div>
+                    <li> Email: {{user.email}}</li>
+                    <li> Password: {{user.password}}</li>
+                    </div>
+                  </li>
+                </ul>
+          </div>
+        </div>
