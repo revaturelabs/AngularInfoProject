@@ -1,3 +1,4 @@
+import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { IntroductionComponent } from './components/typescript/introduction/introduction.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
