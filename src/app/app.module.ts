@@ -9,7 +9,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 import { GoatRoutingModule } from './/goat-routing.module';
+<<<<<<< HEAD
 import { DatabindingdefinitionComponent } from './components/definitions/databindingdefinition/databindingdefinition.component';
+=======
+>>>>>>> Created goat-routing-module
 
 // NgModule Decorator
 @NgModule({
