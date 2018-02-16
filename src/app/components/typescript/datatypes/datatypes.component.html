@@ -1,0 +1,261 @@
+<h1>Data Types in TypeScript</h1>
+<a target="_blank" href="{{datatypedocs}}">
+  <strong>Data Type Documentation</strong>
+</a>
+<!-- <img src="{{datatypesimage}}" /> -->
+<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Boolean
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li>
+            This is the most basic data type in TypeScript.
+          </li>
+          <li>
+            Booleans can only be assigned as true/false.
+          </li>
+          <li>
+            Example:
+          </li>
+          <ul id="examples" class="list-group">
+            <li>
+              let thisBoolean: boolean = false;
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+          aria-controls="collapseTwo">
+          Number
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li>
+            All numbers in TypeScript are floating point values.
+          </li>
+          <li>
+            TypeScript numbers supports decimals, hexidecimals, binary, and octal literals.
+          </li>
+          <li>
+            Examples:
+          </li>
+          <ul id="examples" class="list-group">
+            <li>
+              Decimal: let decimal: number = 13;
+            </li>
+            <li>
+              Hexidecimals: let hexi: number = 0xf00d;
+            </li>
+            <li>
+              Binary: let bin: number = 0b1010;
+            </li>
+            <li>
+              Octal: let oct: number = 0o744;
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+          aria-controls="collapseThree">
+          String
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li>
+            Strings consist of textual data.
+          </li>
+          <li>
+            When assigning a string, you can use either ' ' or " ".
+          </li>
+          <li>
+            Examples:
+          </li>
+          <ul id="examples" class="list-group">
+            <li>
+              let name: string = 'Delli';
+            </li>
+            <li>
+              let name: string = "Delli";
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+          aria-controls="collapseThree">
+          Arrays
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li>
+            Arrays in TypeScript work similarly to those found in JavaScript.
+          </li>
+          <li>
+            Arrays can be written in two different ways:
+          </li>
+          <li>
+            Examples:
+          </li>
+          <ul id="examples" class="list-group">
+            <li>
+              let arrayOne: number[] = [13, 13, 13, 13];
+            </li>
+            <li>
+              let arrayTwo: Array
+              < number> = [13, 13, 13, 13];
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+          aria-controls="collapseFive">
+          Enums
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li>
+            A way of giving numbers a friendly name.
+          </li>
+          <li>
+            By default, enums begin numbering their members at 0.
+          </li>
+          <li>
+            You can assign an enum member to a specific number.
+          </li>
+          <li>
+            Examples:
+          </li>
+          <ul id="examples" class="list-group">
+            <li>
+              enum Colors {{ "{RED, GREEN, BLUE}" }}
+              <br> let c: Colors = Colors.GREEN;
+            </li>
+            <li>
+              enum Colors {{ "{RED = 1, GREEN, BLUE}" }}
+              <br> let c: Colors = Colors.GREEN;
+            </li>
+            <li>
+              enum Colors {{ "{RED = 1, GREEN = 2, BLUE = 5}" }}
+              <br> let c: Colors = Colors.GREEN;
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+          aria-controls="collapseSix">
+          Any
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li>
+            When you don't know what the data type will be; use the "any" data type.
+          </li>
+          <li>
+            An "any" data type can be assigned to any of the data types available in TypeScript.
+          </li>
+          <li>
+            This data type can be changed to any other data type at any time.
+          </li>
+          <li>
+            Examples:
+          </li>
+          <ul id="examples" class="list-group">
+            <li>
+              let unSure: any = 13;
+              <br> any = "maybe this is a string";
+              <br> any = false;
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+          aria-controls="collapseSeven">
+          Void
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+        <ul class="list-group">
+          <li>
+            Void is basically the reverse of any.
+          </li>
+          <li>
+            You usually use this data type for functions that return no other data type.
+          </li>
+          <li>
+            You can assign a variable to void. If you do this, you can only assign that variable to "null" or "undefined".
+          </li>
+          <li>
+            Examples:
+          </li>
+          <ul id="examples" class="list-group">
+            <li>
+              function doNothing(): void {{ "{ alert(This function has no return value.); }" }}
+            </li>
+            <li>
+              let dontUseThisVariable: void = undefined;
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
