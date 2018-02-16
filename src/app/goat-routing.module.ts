@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
 import { DatabindingComponent } from './components/demos/databinding/databinding.component';
 
 // Specify Routes of the Application
 export const routes: Routes = [
-  { path: 'databinding', component: DatabindingComponent}
 
 ];
 
@@ -15,4 +15,4 @@ export const routes: Routes = [
   ],
   declarations: []
 })
-export class GoatRoutingModule {}
+export class GoatRoutingModule { }
